@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Project from './components/Project'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,6 +8,7 @@ function App() {
   return (
    <>
    <h1>Ajay Upadhyay</h1>
+   <Project/>
    </>
   )
 }
