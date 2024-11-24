@@ -27,13 +27,13 @@ const Project = () => {
                 whileHover={{ scale: 1.1 }}
                 src={project.image}
                 alt={project.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full group object-contain transition-transform duration-500 group-hover:scale-110"
               />
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100
+                className="hidden absolute inset-0 group-hover:flex  flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100
               "
               >
                 <h3 className="mb-2 text-xl">{project.name}</h3>
@@ -45,7 +45,7 @@ const Project = () => {
                   className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
                 >
                   <div className="flex items-center">
-                    <span>View on Github</span>
+                    <span>Live View</span>
                     <MdArrowOutward />
                   </div>
                 </a>
