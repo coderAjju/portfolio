@@ -21,7 +21,7 @@ const Project = () => {
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
               key={project.id}
-              className="group relative h-[220px] w-[350px] md:w-auto md:h-auto overflow-hidden rounded-3xl"
+              className="group relative h-[200px] w-[350px] md:w-auto md:h-auto overflow-hidden rounded-md md:rounded-3xl"
             >
               <motion.img
                 whileHover={{ scale: 1.1 }}

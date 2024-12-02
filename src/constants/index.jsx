@@ -11,7 +11,7 @@ import projectImage1 from "../assets/project1.jpeg";
 import projectImage2 from "../assets/project2.jpeg";
 import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
-import projectImage5 from "../assets/project5.jpeg";
+import projectImage5 from "../assets/blogapp.png";
 import projectImage6 from "../assets/project6.jpeg";
 
 import { RiReactjsLine } from "react-icons/ri";
@@ -40,9 +40,9 @@ export const HERO = {
 export const PROJECTS = [
   {
     id: 1,
-    name: "Personal Portfolio",
+    name: "chatty",
     description:
-      "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
+      "A real-time chat application Built with React and Socket.IO, it delivers real-time messaging, ensuring seamless communication with friends and teams.",
     image: projectImage1,
     githubLink: "https://chatty-ogp8.onrender.com/",
   },
@@ -74,9 +74,9 @@ export const PROJECTS = [
     id: 5,
     name: "Blog Platform",
     description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+      "A blogging platform developed with MERN stack for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
     image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
+    githubLink: "https://blogging-app-zpwv.onrender.com/",
   },
   {
     id: 6,
