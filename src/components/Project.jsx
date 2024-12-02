@@ -12,7 +12,7 @@ const Project = () => {
       >
         Projects
       </motion.h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => {
           return (
             <motion.div
@@ -21,13 +21,13 @@ const Project = () => {
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
               key={project.id}
-              className="group relative overflow-hidden rounded-3xl"
+              className="group relative h-[220px] w-[350px] md:w-auto md:h-auto overflow-hidden rounded-3xl"
             >
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 src={project.image}
                 alt={project.name}
-                className="w-full h-full group object-contain transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full group object-cover  md:object-contain  transition-transform duration-500 group-hover:scale-110"
               />
               <motion.div
                 initial={{ opacity: 0 }}
@@ -35,9 +35,9 @@ const Project = () => {
                 transition={{ duration: 0.5 }}
                 className="hidden absolute inset-0 group-hover:flex  flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100
               "
-              >
+              > 
                 <h3 className="mb-2 text-xl">{project.name}</h3>
-                <p className="mb-12 p-4">{project.description}</p>
+                <p className="mb-5 p-4 text-sm md:text-lg">{project.description}</p>
                 <a
                   href={project.githubLink}
                   target="_blank"
